@@ -1,0 +1,3 @@
+mongoimport -d mydb -c img2 -type csv  --drop path-to-your-csv --headerline 
+
+
