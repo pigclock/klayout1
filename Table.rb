@@ -138,7 +138,7 @@ db = client.db("mydb")
 img_coll =  db.collection("img2")
 job_coll =  db.collection("job")
 defect_col= db.collection("defect")
-$img_arr=img_coll.find({},{:fields=>{"_id"=>0,"image_x"=>1,"image_y"=>1,"IMGID"=>1,"DOE"=>1, "FILENAME"=>1,"clipFile"=>1}}).to_a #{"DOE"=>"tripleline"}
+$img_arr=img_coll.find({},{:fields=>{"_id"=>0,"image_x"=>1,"image_y"=>1,"IMGID"=>1,"DOE"=>1, "FILENAME"=>1,"clipFile"=>1}}).to_a
 $job_arr=job_coll.find().limit(50).to_a
 $defect_arr=defect_col.find().limit(50).to_a
 
